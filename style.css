@@ -1,0 +1,192 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope&family=Ubuntu:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 80vw;
+  font-family: "Manrope", sans-serif;
+}
+/* Header */
+.navbar li {
+  list-style: none;
+  margin: 0 12px;
+}
+.navbar {
+  display: flex;
+  height: 70px;
+  font-family: "Manrope", sans-serif;
+}
+header .heading {
+  color: orange;
+  font-size: 1.5rem;
+}
+@media (max-width: 755) {
+  header nav h1 {
+    font-size: 0.5rem;
+  }
+}
+
+/* Main */
+.topLeft {
+  height: 50vh;
+  width: 50%;
+}
+.topRight {
+  height: 50vh;
+  width: 50%;
+}
+.topRight img {
+  width: 550px;
+  height: auto;
+  margin-left: 75px;
+  z-index: -1;
+}
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+.section1 {
+  height: 50vh;
+}
+@media screen and (min-width: 300px) and (max-width: 721px) {
+  .section1 {
+    padding: 0px 0px;
+    margin: 0px 0px;
+    height: 60vh;
+  }
+  .section1 h1 {
+    /* Add styles to adjust the section's layout for smaller screens */
+    /* For example, set a smaller font size for the text */
+    font-size: 16px;
+  }
+  .section1 p {
+    font-size: 11px;
+  }
+}
+/* img {
+  height: 250px;
+  width: 350px;
+  margin: 15px 90px;
+} */
+/* Section 2 */
+.section2 {
+  padding-left: 33px;
+  padding-right: 53px;
+}
+.section2 p {
+  padding: 0px 120px;
+  text-align: center;
+}
+.box {
+  padding: 8px 0px;
+  margin: 12px 22px;
+  background-color: white;
+  min-width: 20vw;
+  border: 2px solid rgb(186, 157, 120);
+  text-align: center;
+  border-radius: 5px;
+}
+.box ul {
+  list-style-type: none;
+}
+.box ul li {
+  margin: 12px 12px;
+}
+.boxes .box h2 {
+  background-color: rgb(229, 212, 199);
+}
+.box button {
+  width: 100%;
+  padding: 7px 0px;
+}
+.box .f-high {
+  font-weight: bolder;
+  font-size: 1.3rem;
+}
+/* section 3 */
+.section3 {
+  padding-left: -100px;
+  padding-right: -100px;
+}
+.plantable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section3 table {
+  width: 100%;
+  margin: 30px 2px;
+  margin-bottom: 100px;
+  border-collapse: collapse;
+}
+.section3 table th {
+  width: 23vw;
+  padding: 15px 0px;
+}
+.section3 .bd {
+  border-bottom: 2px solid black;
+}
+.section3 table tr {
+  border-bottom: 0.5px solid rgb(188, 183, 183);
+}
+footer {
+  font-size: 18px;
+  text-align: center;
+  padding: 12px 12px;
+  font-family: "Times New Roman", Times, serif;
+}
+.box {
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+.boxes .box:hover h2 {
+  background-color: rgb(233, 149, 46);
+}
+.bounce:hover {
+  background-color: rgb(255, 252, 246);
+  animation-name: bounce;
+  animation-timing-function: ease;
+}
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+.bc th:hover {
+  color: rgb(233, 149, 46);
+}
+span {
+  color: rgb(190, 104, 0);
+}
+.section2 h1:hover,
+.section3 h1:hover {
+  -webkit-animation: scale-up-hor-center 0.8s ease-in-out;
+  animation: scale-up-hor-center 0.8s ease-in-out;
+}
+@-webkit-keyframes scale-up-hor-center {
+  0% {
+    -webkit-transform: scaleX(0.4);
+    transform: scaleX(0.4);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
+@keyframes scale-up-hor-center {
+  0% {
+    -webkit-transform: scaleX(0.4);
+    transform: scaleX(0.4);
+  }
+  100% {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+  }
+}
